@@ -3,6 +3,8 @@ body{
   background-color: #fff; /*#f6f6f6, EBEBD3, fafafa*/
   font-family: Bungee Outline;
   font-weight: 900;
+  width: 100%;
+  height: 100vh;
 
   overflow: hidden;
   animation: blur 0.5s ease-out;
