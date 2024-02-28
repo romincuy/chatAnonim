@@ -3,11 +3,12 @@ body{
   background-color: #fff; /*#f6f6f6, EBEBD3, fafafa*/
   font-family: Bungee Outline;
   font-weight: 900;
-  width: 100%;
-  height: 100vh;
 
   overflow: hidden;
   animation: blur 0.5s ease-out;
+
+  width: 100%;
+  height: 100vh;
 
 }
 *{
@@ -51,7 +52,7 @@ body{
 
 #join_container{
   width: 100%;
-  height: 200px;
+  height: 500px;
 
   display: flex;
   justify-content: center;
@@ -64,6 +65,7 @@ body{
 #join_inner_container{
   width: 50%;
   height: 100%;
+  margin-top: 20%;
 }
 #join_input_container{
   width: 100%;
@@ -81,7 +83,7 @@ body{
 
   color: #1D3354;
   font-family: Varela Round;
-  font-size: 15px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   background-color: Transparent;
@@ -103,10 +105,10 @@ body{
 }
 #join_button{
   width: 60%;
-  height: 40px;
-
+  height: 80px;
+  margin-top: 50px;
   font-family: Varela Round;
-  font-size: 15px;
+  font-size: 50px;
   font-weight: bold;
   text-align: center;
   color: #fff;
@@ -126,8 +128,8 @@ body{
 
 }
 #chat_inner_container{
-  width: 40%;
-  height: 100%;
+  width: 80%;
+  height: 200%;
 }
 #chat_content_container{
   width: 100%;
@@ -159,15 +161,19 @@ body{
   float: left;
   background-color: Transparent;
   color: #1D3354;
-  font-size: 15px;
+  font-size: 35px;
 }
 #chat_input_send{
   width: 5%;
   height: 100%;
   float: left;
-  font-size: 18px;
+  font-size: 50px;
   background-color: Transparent;
   text-align: right;
+}
+
+.material-icons {
+  font-size: 50px;
 }
 #chat_input_send.enabled{
   color: #D64045;
@@ -212,7 +218,7 @@ body{
 }
 .message_user{
   font-weight: bold;
-  font-size: 14px;
+  font-size: 30px;
 }
 .message_content_container{
   width: 100%;
@@ -223,7 +229,7 @@ body{
 }
 .message_content{
   font-weight: normal;
-  font-size: 14px;
+  font-size: 30px;
   margin-top: 5px;
 }
 
@@ -267,73 +273,57 @@ body{
   100% { transform: rotate(360deg); }
 }
 @keyframes fadeIn {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
+
 @keyframes blur {
-  0% {filter: blur(5px);}
-  100% {}
+  0% { filter: blur(5px); }
 }
+
 ::selection {
   background-color: #D64045;
   color: #fff;
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #cccs;
+  background: #ccc; /* Mengganti warna background yang typo */
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #D64045;
   border-radius: 5px;
 }
 
-
-/* Untuk layar yang lebih kecil dari 768px, misalnya, ponsel */
-@media (max-width: 768px) {
-  #title {
-    font-size: 35px;
-  }
-  #join_container {
-    margin-top: 30px;
-  }
-  /*#chat_container {
-    margin-top: 20px;
-    height: 300px;
-  }*/
-  #chat_inner_container {
-    width: 90%;
-    height: 100%;
-  }
-}
-
-
-/* Untuk layar yang lebih kecil dari 480px, misalnya, ponsel kecil */
-@media (max-width: 480px) {
-  #title {
-    font-size: 25px;
-  }
-  #join_input {
-    width: 70%;
-  }
-  /*#chat_container {
-    margin-top: 10px;
-    height: 250px;
-  }*/
-
-  #chat_inner_container {
-    width: 90%;
-    height: 100%;
+/* @media only screen and (max-width: 600px) {
+  body {
+    font-size: 20px;
   }
 
-  #chat_input_send {
-    font-size:12px;
+  .message_user {
+    font-size: 30px;
   }
-  #title.chat_title{
-  font-size: 20px;
-}
-}
+
+  .message_content {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+
+  #chat_logout {
+    font-size: 50px;
+  }
+} */
+
+
+
+
+  
+
+
