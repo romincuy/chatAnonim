@@ -206,12 +206,13 @@ body{
   align-items: center;
 
   float: left;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #chat_logout{
 /*  color: #D64045;*/
   cursor: pointer;
   padding: 5px;
+  font-size: 30px;
 }
 #chat_logout:hover{
   text-decoration: underline;
@@ -234,7 +235,7 @@ body{
 }
 .message_user{
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
 }
 .message_content_container{
   width: 100%;
@@ -245,7 +246,7 @@ body{
 }
 .message_content{
   font-weight: normal;
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 5px;
 }
 
@@ -262,7 +263,7 @@ body{
 }
 #title.chat_title{
   transition: 0.8s;
-  font-size: 47px;
+  font-size: 50px;
 }
 .loader_container{
   width: 100%;
@@ -314,7 +315,7 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #D64045;
+  background: black;
   border-radius: 5px;
 }
 
